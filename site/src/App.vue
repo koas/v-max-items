@@ -39,7 +39,7 @@
 
 <p>Only the first five items are visible:</p>
 
-<div v-max-items="5">
+<div v-max-items="5" class="demo">
   <div>Element 1</div>
   <div>Element 2</div>
   <div>Element 3</div>
