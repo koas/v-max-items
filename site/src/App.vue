@@ -52,10 +52,14 @@
   <div>Element 10</div>
 </div>
 <br /><br />&nbsp;
-<h3>Installing</h3>
+<h3>Installation and usage</h3>
+
+<p>You can install the directive via npm:</p>
 
 <pre>$ npm install @koas/v-max-items</pre>
 
+<p>And include it in your main.js file:</p>
+<pre>import MaxItems from "@koas/v-max-items";</pre>
 
 <h3>That's all!</h3>
 <p>I hope you find this directive useful. Feel free to fork it or open issues with bugs or suggestions for improvement.</p>
