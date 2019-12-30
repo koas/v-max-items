@@ -53,6 +53,7 @@ const MaxItems = {
     })
     
     el.appendChild(but);
+    update(el, bindings, vn);
   },
   componentUpdated(el, bindings, vn) 
   {
