@@ -6,7 +6,10 @@ function update(el, bindings, vn)
   let but = document.getElementById(el.buttonId);
 
   if (!but)
+  {
+    setTimeout(() => {update(el, bindings, vn);}, 100);
     return;
+  }
 
   // Move button to the end of the parent element so it stays at the end of
   // the items list in case any new items were added
@@ -35,13 +38,13 @@ const MaxItems = {
   bind(el, bindings, vn)
   {    
     el.buttonId = "but" + Math.floor(new Date().valueOf() * Math.random());
-    el.showAll = false;
-    el.className = "v-max-items";
+    el.showAll = false;    
 
     let but = document.createElement("button");
 
     but.setAttribute("id", el.buttonId);
     but.innerHTML = el.buttonId;
+    but.className = "v-max-items";
     but.style.setProperty("display", "none", "important");
     but.addEventListener("click", function()
     {
